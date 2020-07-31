@@ -29,11 +29,12 @@ function App() {
               Projects
             </Link>
             <a
+                className="external-link"
                 href="https://medium.com/@csarkosh"
                 rel="noopener noreferrer"
                 target="_blank"
             >
-              Writings
+              Writings <div className="external-link-icon">↗</div>
             </a>
             <Link to={CONTACT_PATH}>
               Contact

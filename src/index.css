@@ -82,3 +82,14 @@ a {
   max-width: 890px;
   padding: 0 20px;
 }
+
+.external-link {
+  position: relative;
+}
+
+.external-link-icon {
+  font-size: 13px;
+  position: absolute;
+  right: -7px;
+  top: 1px;
+}

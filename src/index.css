@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, h2 {
+  font-weight: normal;
+  margin: 0 0 16px;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  color: #828091;
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+a {
+  color: #3740ff;
+  text-decoration: none;
+}
+
+.navbar {
+  align-items: center;
+  background-color: black;
+  border-bottom: 5px solid #90ee90;
+  display: flex;
+  font-weight: 600;
+  justify-content: space-between;
+  padding: 8px 20px;
+}
+
+.navbar a {
+  color: white;
+  font-size: 18px;
+}
+
+.navbar a + a {
+  margin-left: 16px;
+}
+
+.navbar > a:first-child {
+  align-items: center;
+  display: flex;
+}
+.navbar > a:first-child div {
+  font-size: 30px;
+  margin-left: 8px;
+}
+.navbar > a:first-child div span:first-child {
+  color: #90ee90;
+  margin-right: 8px;
+}
+
+@media (max-width: 620px) {
+  .navbar > a:first-child div span {
+    display: none;
+  }
+}
+
+.page-body {
+  margin: 0 auto;
+  margin-top: 36px;
+  max-width: 890px;
+  padding: 0 20px;
+}

@@ -18,10 +18,10 @@ export default function() {
             </p>
             <p>
                 Some technologies I enjoy working with are React, Node.js, <a href="https://www.terraform.io/" target="_blank" rel="noopener noreferrer">Terraform</a> (infrastructure
-                as code tool), and many more.
+                as code tool), and many more
             </p>
             <p>
-                If you'd like to look further into the code I write, then check out my <a href="https://github.com/csarkosh" target="_blank" rel="noopener noreferrer">Github</a>.
+                If you'd like to look further into the code I write, then check out my <a href="https://github.com/csarkosh" target="_blank" rel="noopener noreferrer">Github</a>
             </p>
             <div className="projects-container">
                 <div className="project">

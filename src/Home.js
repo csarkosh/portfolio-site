@@ -49,7 +49,7 @@ export default function() {
                 </div>
                 <div>
                     <img
-                        alt="Picture of me"
+                        alt="me hiking"
                         className="me2"
                         src="/me_lake22_cropped.jpeg"
                     />

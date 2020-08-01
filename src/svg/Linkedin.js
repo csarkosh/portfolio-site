@@ -4,7 +4,7 @@ function Icon() {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            ariaHidden="true"
+            aria-hidden="true"
             className="svg-inline--fa fa-linkedin fa-w-14"
             data-icon="linkedin"
             data-prefix="fab"

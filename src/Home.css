@@ -2,7 +2,7 @@
     display: flex;
 }
 
-.me2 {
+#home .me2 {
     border-radius: 16px;
     box-shadow: 0 2px 3px 0 rgba(60,64,67,0.3), 0 6px 10px 4px rgba(60,64,67,0.15);
     height: 240px;
@@ -11,25 +11,25 @@
 }
 
 @media (max-width: 640px) {
-    .me2 {
+    #home .me2 {
         display: none;
     }
 }
 
-.icon-links {
+#home .icon-links {
     margin-top: 32px;
 }
 
-.icon-links a {
+#home .icon-links a {
     color: #828091;
     transition: opacity 95ms cubic-bezier(0.2, 0.4, 1, 1) 0ms;
 }
 
-.icon-links a:hover {
+#home .icon-links a:hover {
     opacity: 0.7;
     transition: opacity 155ms cubic-bezier(0.2, 0.4, 1, 1) 0ms;
 }
 
-.icon-links a + a {
+#home .icon-links a + a {
     margin-left: 20px;
 }

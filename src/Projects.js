@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Projects.css";
 import Tools from "./svg/Tools";
+import desktopImg from './img/readme-viewer-desktop.png'
+import mobileImg from './img/readme-viewer-mobile.png'
 
 export default function() {
     React.useEffect(() => {
@@ -23,8 +25,8 @@ export default function() {
             </p>
             <div className="projects-container">
                 <div className="project">
-                    <img src="/readme-viewer-desktop.png" width={292}  alt="Desktop" />
-                    <img src="/readme-viewer-mobile.png" width={92}  alt="Mobile" />
+                    <img src={desktopImg} width={292}  alt="Desktop" />
+                    <img src={mobileImg} width={92}  alt="Mobile" />
                     <p>
                         I created <a href="https://readme-viewer.csarko.sh" target="_blank" rel="noopener noreferrer">readme-viewer.csarko.sh</a> as
                         an exercise to create a 100% serverless web app on AWS with an A+ security rating

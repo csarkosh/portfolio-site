@@ -5,6 +5,7 @@ import Github from "./svg/Github";
 import Codepen from "./svg/Codepen";
 import Medium from "./svg/Medium";
 import Linkedin from "./svg/Linkedin";
+import meLake22 from "./img/me_lake22_cropped.jpeg";
 
 export default function() {
     React.useEffect(() => {
@@ -51,7 +52,7 @@ export default function() {
                     <img
                         alt="me hiking"
                         className="me2"
-                        src="/me_lake22_cropped.jpeg"
+                        src={meLake22}
                     />
                 </div>
             </div>

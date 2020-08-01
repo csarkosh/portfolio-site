@@ -4,6 +4,7 @@ import Home from "./Home";
 import Projects from "./Projects";
 import "./index.css";
 import Contact from "./Contact";
+import meCircle from './img/me-circle.png'
 
 export const HOME_PATH = '/';
 export const PROJECTS_PATH = '/projects';
@@ -17,7 +18,7 @@ function App() {
             <img
                 alt="Nav icon"
                 height={50}
-                src="/me-circle.png"
+                src={meCircle}
             />
             <div>
               <span>CYRUS</span>

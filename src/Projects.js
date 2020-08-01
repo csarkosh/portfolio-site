@@ -27,7 +27,7 @@ export default function() {
                     <img src="/readme-viewer-mobile.png" width={92}  alt="Mobile" />
                     <p>
                         I created <a href="https://readme-viewer.csarko.sh" target="_blank" rel="noopener noreferrer">readme-viewer.csarko.sh</a> as
-                        an attempt to create a 100% serverless web app on AWS with an A+ security rating
+                        an exercise to create a 100% serverless web app on AWS with an A+ security rating
                         on <a href="https://observatory.mozilla.org/analyze/readme-viewer.csarko.sh" target="_blank" rel="noopener noreferrer">Mozilla's Observatory tool</a>
                     </p>
                     <p>

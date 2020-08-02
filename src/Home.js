@@ -34,7 +34,7 @@ export default function() {
             </p>
             <p>
                 You can find my open-sourced apps and games on my <Link to={PROJECTS_PATH}>projects page</Link>, and
-                the code on <a href="https://github.com/csarkosh" target="_blank" rel="noopener noreferrer">my Github</a>
+                the code on <a aria-label="Github" href="https://github.com/csarkosh" target="_blank" rel="noopener noreferrer">my Github</a>
             </p>
         </div>
     )

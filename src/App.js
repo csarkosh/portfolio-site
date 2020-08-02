@@ -32,6 +32,7 @@ function App() {
               Projects
             </Link>
             <a
+                aria-label="Medium"
                 className="external-link"
                 href="https://medium.com/@csarkosh"
                 rel="noopener noreferrer"

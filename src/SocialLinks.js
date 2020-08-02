@@ -9,6 +9,7 @@ export default function () {
     return (
         <div id="social-links">
             <a
+                aria-label="Github"
                 href="https://github.com/csarkosh"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -16,6 +17,7 @@ export default function () {
                 <Github />
             </a>
             <a
+                aria-label="Medium"
                 href="https://medium.com/@csarkosh"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -23,6 +25,7 @@ export default function () {
                 <Medium />
             </a>
             <a
+                aria-label="Codepen"
                 href="https://codepen.io/csarkosh"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -30,6 +33,7 @@ export default function () {
                 <Codepen />
             </a>
             <a
+                aria-label="Linkedin"
                 href="https://www.linkedin.com/public-profile/in/csarkosh"
                 rel="noopener noreferrer"
                 target="_blank"

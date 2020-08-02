@@ -17,28 +17,28 @@ export default function() {
                 people decompress through the computer games I build as an enthusiast
             </p>
             <p>
-                Some technologies I enjoy working with are React, Node.js, <a href="https://www.terraform.io/" target="_blank" rel="noopener noreferrer">Terraform</a> (infrastructure
+                Some technologies I enjoy working with are React, Node.js, <a aria-label="Terraform" href="https://www.terraform.io/" target="_blank" rel="noopener noreferrer">Terraform</a> (infrastructure
                 as code tool), and many more
             </p>
             <p>
-                If you'd like to look further into the code I write, then check out my <a href="https://github.com/csarkosh" target="_blank" rel="noopener noreferrer">Github</a>
+                If you'd like to look further into the code I write, then check out my <a aria-label="Github" href="https://github.com/csarkosh" target="_blank" rel="noopener noreferrer">Github</a>
             </p>
             <div className="projects-container">
                 <div className="project">
                     <img src={desktopImg} width={292}  alt="Desktop" />
                     <img src={mobileImg} width={92}  alt="Mobile" />
                     <p>
-                        I created <a href="https://readme-viewer.csarko.sh" target="_blank" rel="noopener noreferrer">readme-viewer.csarko.sh</a> as
+                        I created <a aria-label="Readme Viewer" href="https://readme-viewer.csarko.sh" target="_blank" rel="noopener noreferrer">readme-viewer.csarko.sh</a> as
                         an exercise to create a 100% serverless web app on AWS with an A+ security rating
-                        on <a href="https://observatory.mozilla.org/analyze/readme-viewer.csarko.sh" target="_blank" rel="noopener noreferrer">Mozilla's Observatory tool</a>
+                        on <a aria-label="Mozilla Observatory" href="https://observatory.mozilla.org/analyze/readme-viewer.csarko.sh" target="_blank" rel="noopener noreferrer">Mozilla's Observatory tool</a>
                     </p>
                     <p>
                         <b>Technologies:</b> AWS, CircleCI, Docker, NodeJS, React, and Terraform
                     </p>
                     <p className="project-bottom">
-                        <b><a href="https://github.com/csarkosh/readme-viewer" target="_blank" rel="noopener noreferrer">Github</a></b>
+                        <b><a aria-label="Github" href="https://github.com/csarkosh/readme-viewer" target="_blank" rel="noopener noreferrer">Github</a></b>
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        <b><a href="https://readme-viewer.csarko.sh" target="_blank" rel="noopener noreferrer">Website</a></b>
+                        <b><a aria-label="Readme Viewer" href="https://readme-viewer.csarko.sh" target="_blank" rel="noopener noreferrer">Website</a></b>
                     </p>
                 </div>
                 <div className="project in-progress">
@@ -55,9 +55,9 @@ export default function() {
                         </p>
                     </div>
                     <p>
-                        <b><a href="https://github.com/csarkosh/3d-web-game" target="_blank" rel="noopener noreferrer">Github</a></b>
+                        <b><a aria-label="Github" href="https://github.com/csarkosh/3d-web-game" target="_blank" rel="noopener noreferrer">Github</a></b>
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        <b><a href="https://webgl.csarko.sh" target="_blank" rel="noopener noreferrer">Website</a></b>
+                        <b><a aria-label="Website" href="https://webgl.csarko.sh" target="_blank" rel="noopener noreferrer">Website</a></b>
                     </p>
                 </div>
             </div>

@@ -1,10 +1,12 @@
 import React from 'react';
 import {NavLink as Link, Route, Switch } from "react-router-dom";
-import Home from "./Home";
-import Projects from "./Projects";
 import "./index.css";
-import Contact from "./Contact";
-import meCircle from './img/me-circle.png'
+import "./App.css";
+import meCircle from './img/me-circle.webp'
+
+const Contact = React.lazy(() => import('./Contact'));
+const Home = React.lazy(() => import('./Home'));
+const Projects = React.lazy(() => import('./Projects'));
 
 export const HOME_PATH = '/';
 export const PROJECTS_PATH = '/projects';
@@ -42,6 +44,8 @@ function App() {
             </Link>
           </div>
         </div>
+        <React.Suspense fallback={<React.Fragment />}>
+        <div />
         <div className="page-body">
           <Switch>
             <Route path={PROJECTS_PATH}>
@@ -55,8 +59,9 @@ function App() {
             </Route>
           </Switch>
         </div>
+        </React.Suspense>
       </React.Fragment>
   );
 }
 
-export default App;
+export default App

@@ -1,8 +1,9 @@
 import React from "react";
 import {PROJECTS_PATH} from "./App";
 import "./Home.css";
-import meLake22 from "./img/me_lake22_cropped.jpeg";
+import meLake22 from "./img/me_lake22_cropped.webp";
 import SocialLinks from "./SocialLinks";
+import {NavLink as Link} from "react-router-dom";
 
 export default function() {
     React.useEffect(() => {
@@ -32,7 +33,7 @@ export default function() {
                 first-person web game
             </p>
             <p>
-                You can find my open-sourced apps and games on my <a href={PROJECTS_PATH}>projects page</a>, and
+                You can find my open-sourced apps and games on my <Link to={PROJECTS_PATH}>projects page</Link>, and
                 the code on <a href="https://github.com/csarkosh" target="_blank" rel="noopener noreferrer">my Github</a>
             </p>
         </div>

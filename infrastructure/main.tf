@@ -67,7 +67,23 @@ resource "aws_cloudfront_distribution" "cdn" {
   ordered_cache_behavior {
     allowed_methods = ["GET", "HEAD"]
     cached_methods = ["GET", "HEAD"]
-    path_pattern = "/"
+    path_pattern = "/index.html"
+    target_origin_id = module.s3.id
+    viewer_protocol_policy = "redirect-to-https"
+    min_ttl = 0
+    max_ttl = 0
+    default_ttl = 0
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+  ordered_cache_behavior {
+    allowed_methods = ["GET", "HEAD"]
+    cached_methods = ["GET", "HEAD"]
+    path_pattern = "/asset-manifest.json"
     target_origin_id = module.s3.id
     viewer_protocol_policy = "redirect-to-https"
     min_ttl = 0

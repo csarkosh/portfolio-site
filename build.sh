@@ -12,15 +12,15 @@ sed -i -e "s%${REPLACE_TAG}%${CSS}%g" build/index.html
 
 # gzip & sync to s3
 find build -type f -exec gzip -r9 {} \; -exec mv {}.gz {} \;
-#aws s3 sync build s3://csarko.sh \
-#    --cache-control max-age=31536000,public \
-#    --content-encoding gzip \
-#    --delete \
-#    --exclude index.html \
-#    --exclude asset-manifest.json
-#aws s3 sync build s3://csarko.sh \
-#    --cache-control no-store \
-#    --content-encoding gzip \
-#    --exclude "*" \
-#    --include index.html \
-#    --include asset-manifest.json
+aws s3 sync build s3://csarko.sh \
+    --cache-control max-age=31536000,public \
+    --content-encoding gzip \
+    --delete \
+    --exclude index.html \
+    --exclude asset-manifest.json
+aws s3 sync build s3://csarko.sh \
+    --cache-control no-store \
+    --content-encoding gzip \
+    --exclude "*" \
+    --include index.html \
+    --include asset-manifest.json

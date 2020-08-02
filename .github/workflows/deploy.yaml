@@ -1,0 +1,18 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: build and deploy
+    runs-on: ubuntu-latest
+    container: csarko/node_terraform_awscli
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        run: ./build.sh
+
+

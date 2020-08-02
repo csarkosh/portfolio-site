@@ -16,6 +16,7 @@ aws s3 sync build s3://csarko.sh \
     --cache-control max-age=31536000,public \
     --content-encoding gzip \
     --delete \
+    --exclude .github \
     --exclude index.html \
     --exclude asset-manifest.json
 aws s3 sync build s3://csarko.sh \

@@ -9,5 +9,9 @@ The purpose of this project is to demonstrate a website with [100/100 performanc
 
 * **SEO & Web Best Practices:** The website scores a 100/100 on Google Lighthouse's SEO & Best Practices audit.
 
+[View the website here.](https://csarko.sh)
+
 ## Architecture
 ![Architecture diagram](./.github/portfolio-site.png)
+
+This project is part of an article I wrote on tuning Core Web Vitals performance and [can be read here](https://medium.com/@csarkosh/configure-aws-cloudfront-for-optimal-page-speed-with-core-web-vitals-performance-metrics-2b871e245e20). 

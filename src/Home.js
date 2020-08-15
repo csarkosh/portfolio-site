@@ -30,11 +30,11 @@ export default function() {
                 </div>
             </div>
             <p>
-                Hey, I'm Cyrus. I'm a cloud and web programmer who is passionate about
-                building apps and features that bring joy. I am always learning and
-                building new things on my own. Currently, I've been studying the
-                basics of 3D graphics programming and been putting together a 3D
-                first-person web game
+                Hey, I'm Cyrus. I'm a professional cloud and web developer, and a 
+                3D game-building hobbyiest. I am always learning and building new 
+                things on my own. Currently, I've been studying the basics of 3D 
+                graphics programming and been putting together a 3D first-person 
+                web game
             </p>
             <p>
                 You can find my open-sourced apps and games on my <Link to={PROJECTS_PATH}>projects page</Link>, and

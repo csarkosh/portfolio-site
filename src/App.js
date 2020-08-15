@@ -2,7 +2,8 @@ import React from 'react';
 import {NavLink as Link, Route, Switch } from "react-router-dom";
 import "./index.css";
 import "./App.css";
-import meCircle from './img/me-circle.webp'
+import meCircleWebp from './img/me-circle.webp'
+import meCirclePng from './img/me-circle.png'
 
 const Contact = React.lazy(() => import('./Contact'));
 const Home = React.lazy(() => import('./Home'));
@@ -17,11 +18,14 @@ function App() {
       <React.Fragment>
         <div className="navbar">
           <Link to={HOME_PATH}>
-            <img
-                alt="Nav icon"
-                height={50}
-                src={meCircle}
-            />
+            <picture>
+              <source srcSet={`${meCirclePng} 50w`} type="image/png" />
+              <img
+                  alt="Nav icon"
+                  height={50}
+                  src={meCircleWebp}
+              />
+            </picture>
             <div>
               <span>CYRUS</span>
               <span>SARKOSH</span>

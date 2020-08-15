@@ -10,7 +10,7 @@
     margin-right: 120px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 700px) {
     #home .me2 {
         display: none;
     }

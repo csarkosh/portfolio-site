@@ -1,7 +1,8 @@
 import React from "react";
 import {PROJECTS_PATH} from "./App";
 import "./Home.css";
-import meLake22 from "./img/me_lake22_cropped.webp";
+import meLake22Webp from "./img/me_lake22_cropped.webp";
+import meLake22Png from "./img/me_lake22_cropped.png";
 import SocialLinks from "./SocialLinks";
 import {NavLink as Link} from "react-router-dom";
 
@@ -18,11 +19,14 @@ export default function() {
                     <SocialLinks />
                 </div>
                 <div>
-                    <img
-                        alt="me hiking"
-                        className="me2"
-                        src={meLake22}
-                    />
+                    <picture>
+                        <source srcSet={meLake22Png} type="image/png" />
+                        <img
+                            alt="me hiking"
+                            className="me2"
+                            src={meLake22Webp}
+                        />
+                    </picture>
                 </div>
             </div>
             <p>

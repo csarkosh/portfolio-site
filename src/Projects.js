@@ -48,7 +48,7 @@ export default function() {
                     description="A 3D web game with a first-person camera"
                     ghUrl="https://github.com/csarkosh/3d-web-game"
                     inProgress
-                    technologies="AWS, Babylon.js, Docker, Github Actions, GLSL, React, and Terraform"
+                    technologies="AWS, Babylon.js, Docker, Github Actions, React, Terraform, and WebGL"
                     previewImg={
                         <div style={{ textAlign: 'center' }}>
                             <Tools width={200} />

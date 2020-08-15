@@ -1,8 +1,8 @@
 import React from 'react'
-import "./Projects.css";
+import "./Projects.scss";
 import Tools from "./svg/Tools";
 import desktopImg from './img/readme-viewer-desktop.png'
-import mobileImg from './img/readme-viewer-mobile.png'
+import Project from "./Project";
 
 export default function() {
     React.useEffect(() => {
@@ -24,42 +24,38 @@ export default function() {
                 If you'd like to look further into the code I write, then check out my <a aria-label="Github" href="https://github.com/csarkosh" target="_blank" rel="noopener noreferrer">Github</a>
             </p>
             <div className="projects-container">
-                <div className="project">
-                    <img src={desktopImg} width={292}  alt="Desktop" />
-                    <img src={mobileImg} width={92}  alt="Mobile" />
-                    <p>
-                        I created <a aria-label="Readme Viewer" href="https://readme-viewer.csarko.sh" target="_blank" rel="noopener noreferrer">readme-viewer.csarko.sh</a> as
-                        an exercise to create a 100% serverless web app on AWS with an A+ security rating
-                        on <a aria-label="Mozilla Observatory" href="https://observatory.mozilla.org/analyze/readme-viewer.csarko.sh" target="_blank" rel="noopener noreferrer">Mozilla's Observatory tool</a>
-                    </p>
-                    <p>
-                        <b>Technologies:</b> AWS, CircleCI, Docker, NodeJS, React, and Terraform
-                    </p>
-                    <p className="project-bottom">
-                        <b><a aria-label="Github" href="https://github.com/csarkosh/readme-viewer" target="_blank" rel="noopener noreferrer">Github</a></b>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <b><a aria-label="Readme Viewer" href="https://readme-viewer.csarko.sh" target="_blank" rel="noopener noreferrer">Website</a></b>
-                    </p>
-                </div>
-                <div className="project in-progress">
-                    <div>
-                        <div>
+                <Project
+                    demoUrl="https://readme-viewer.csarko.sh"
+                    ghUrl="https://github.com/csarkosh/readme-viewer"
+                    technologies="AWS, CircleCI, Docker, NodeJS, React, and Terraform"
+                    description={
+                        <React.Fragment>
+                            I created <a aria-label="Readme Viewer" href="https://readme-viewer.csarko.sh" target="_blank" rel="noopener noreferrer">readme-viewer.csarko.sh</a> as
+                            an exercise to create a 100% serverless web app on AWS with an A+ security rating
+                            on <a aria-label="Mozilla Observatory" href="https://observatory.mozilla.org/analyze/readme-viewer.csarko.sh" target="_blank" rel="noopener noreferrer">Mozilla's Observatory tool</a>
+                        </React.Fragment>
+                    }
+                    previewImg={
+                        <img
+                            alt="Desktop"
+                            src={desktopImg}
+                            width="100%"
+                        />
+                    }
+                />
+                <Project
+                    demoUrl="https://webgl.csarko.sh"
+                    description="A 3D web game with a first-person camera"
+                    ghUrl="https://github.com/csarkosh/3d-web-game"
+                    inProgress
+                    technologies="AWS, Babylon.js, Docker, Github Actions, GLSL, React, and Terraform"
+                    previewImg={
+                        <div style={{ textAlign: 'center' }}>
                             <Tools width={200} />
                             <p>In Progress</p>
                         </div>
-                        <p>
-                            A 3D web game with a first-person camera
-                        </p>
-                        <p>
-                            <b>Technologies:</b> AWS, Babylon.js, Docker, Github Actions, React, and Terraform
-                        </p>
-                    </div>
-                    <p>
-                        <b><a aria-label="Github" href="https://github.com/csarkosh/3d-web-game" target="_blank" rel="noopener noreferrer">Github</a></b>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <b><a aria-label="Website" href="https://webgl.csarko.sh" target="_blank" rel="noopener noreferrer">Website</a></b>
-                    </p>
-                </div>
+                    }
+                />
             </div>
         </div>
     );

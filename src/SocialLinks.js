@@ -1,5 +1,5 @@
 import React from "react";
-import "./SocialLinks.css";
+import "./SocialLinks.scss";
 import Github from "./svg/Github";
 import Medium from "./svg/Medium";
 import Codepen from "./svg/Codepen";
@@ -7,7 +7,7 @@ import Linkedin from "./svg/Linkedin";
 
 export default function () {
     return (
-        <div id="social-links">
+        <div className="social-links">
             <a
                 aria-label="Github"
                 href="https://github.com/csarkosh"

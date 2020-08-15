@@ -1,7 +1,8 @@
 import React from 'react';
 import {NavLink as Link, Route, Switch } from "react-router-dom";
 import "./index.css";
-import "./App.css";
+import "./App.escape.css";
+import "./App.scss";
 import meCircleWebp from './img/me-circle.webp'
 import meCirclePng from './img/me-circle.png'
 
@@ -17,7 +18,7 @@ function App() {
   return (
       <React.Fragment>
         <div className="navbar">
-          <Link to={HOME_PATH}>
+          <Link className="navbar-logo" to={HOME_PATH}>
             <picture>
               <source srcSet={`${meCirclePng} 50w`} type="image/png" />
               <img

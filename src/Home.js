@@ -1,6 +1,6 @@
 import React from "react";
 import {PROJECTS_PATH} from "./App";
-import "./Home.css";
+import "./Home.scss";
 import meLake22Webp from "./img/me_lake22_cropped.webp";
 import meLake22Png from "./img/me_lake22_cropped.png";
 import SocialLinks from "./SocialLinks";

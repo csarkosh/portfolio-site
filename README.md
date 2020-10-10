@@ -1,5 +1,5 @@
 # [Portfolio Site](https://csarko.sh) &middot; ![Deploy](https://github.com/csarkosh/portfolio-site/workflows/Deploy/badge.svg) [![Website Status](https://img.shields.io/website/https/csarko.sh.svg)](https://csarko.sh)
-The purpose of this project is to demonstrate a website with [100/100 performance rating on Google Lighthouse](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fcsarko.sh%2F&tab=desktop) and to serve as my portfolio website.
+The purpose of this project is to demonstrate a website with [100/100 score on each Core Web Vitals metric](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fcsarko.sh%2F&tab=desktop) and to serve as my portfolio website.
 
 * **Accessible & Responsive:** The website is fully accessible and scores a 100/100 on Google Lighthouse's Accessibility audit, and collapses down from a desktop view into a responsive mobile view.
 
